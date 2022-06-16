@@ -8,13 +8,14 @@ using static System.Console;
 Clear();
 
 
-WriteLine(FillArray);
+
 
 
 
 void PrintArray (FillArray)
 {
-    for
+    for (int i=0; i>=7; i++)
+    Write(FillArray[i]);
 }
 
 int [] FillArray (int [] array)
