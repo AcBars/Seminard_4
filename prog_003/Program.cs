@@ -6,26 +6,23 @@
 
 using static System.Console;
 Clear();
+PrintArray();
 
-
-
-
-
-
-void PrintArray (FillArray)
+void PrintArray()
 {
-    for (int i=0; i>=7; i++)
-    Write(FillArray[i]);
+    int[] array = FillArray();
+    for (int i = 0; i < array.Length; i++)
+        Write(array[i]);
 }
 
-int [] FillArray (int [] array)
+int[] FillArray()
 {
-    
-    int [] array1 = new int[8];
-    for(int a = 0; a<8; a++)
+
+    int[] array1 = new int[8];
+    for (int a = 0; a < array1.Length; a++)
     {
-        
-       array1[a]=new Random().Next(0,2);
+
+        array1[a] = new Random().Next(0, 2);
 
     }
     return array1;
